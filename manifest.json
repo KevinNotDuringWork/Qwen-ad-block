@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "AI Ad Silencer",
+  "version": "0.1.0",
+  "description": "Asks a locally running LLM which elements are ads, then hides them.",
+  "background": {
+    "service_worker": "background.js",
+    "scripts": ["background.js"]
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "host_permissions": [
+    "http://localhost:8080/*",
+    "<all_urls>"
+  ]
+}
