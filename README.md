@@ -1,5 +1,5 @@
-# **VIBE CODED** Experiment with Claude Opus 5.5 
-
+ **DISCLAIMER: VIBE CODED** Experiment with Claude Opus 5.5 and Kimi K3
+This is more or less a "show thought" experiment. No javascript dependencies, just Qwen 3.5B running locally.   
 
 # AI Ad Silencer (Chrome Extension)
 
